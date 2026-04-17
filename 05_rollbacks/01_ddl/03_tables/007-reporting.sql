@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS user_activity_report CASCADE;
+DROP TABLE IF EXISTS audit_summary CASCADE;
+DROP TABLE IF EXISTS system_metric CASCADE;
+DROP TABLE IF EXISTS generated_report CASCADE;
+DROP TABLE IF EXISTS report_type CASCADE;
