@@ -27,3 +27,17 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/002-security.sql
             stripComments: false
             splitStatements: false
+  - changeSet:
+      id: 003-create-business-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/003-business.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/003-business.sql
+            stripComments: false
+            splitStatements: false          
