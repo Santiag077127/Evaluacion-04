@@ -41,3 +41,18 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/003-business.sql
             stripComments: false
             splitStatements: false          
+
+  - changeSet:
+      id: 004-create-inventory-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/004-inventory.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/004-inventory.sql
+            stripComments: false
+            splitStatements: false          
