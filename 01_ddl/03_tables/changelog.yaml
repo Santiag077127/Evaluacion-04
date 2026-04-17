@@ -56,3 +56,17 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/004-inventory.sql
             stripComments: false
             splitStatements: false          
+  - changeSet:
+      id: 005-create-payments-domain
+      author: Santiagogordoperez
+      labels: HU-07-5Dominio
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/005-payments.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/005-payments.sql
+            stripComments: false
+            splitStatements: false          
