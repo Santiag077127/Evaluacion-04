@@ -111,5 +111,18 @@ databaseChangeLog:
         - sqlFile:
             path: 05_rollbacks/01_ddl/03_tables/008-flight_operations.sql
             stripComments: false
-            splitStatements: false          
-          
+            splitStatements: false  
+  - changeSet:
+      id: 009-create-sales-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/009-sales.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/009-sales.sql
+            stripComments: false
+            splitStatements: false
