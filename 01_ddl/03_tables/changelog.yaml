@@ -97,4 +97,19 @@ databaseChangeLog:
         - sqlFile:
             path: 05_rollbacks/01_ddl/03_tables/007-aircraft.sql
             stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 008-create-flight-operations-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/008-flight_operations.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/008-flight_operations.sql
+            stripComments: false
             splitStatements: false          
+          
