@@ -30,14 +30,14 @@ databaseChangeLog:
   - changeSet:
       id: 003-create-business-domain
       author: Santiagogordoperez
-      labels: HU-03-dev
+      labels: HU-05-3Dominio
       changes:
         - sqlFile:
-            path: 01_ddl/03_tables/003-business.sql
+            path: 01_ddl/03_tables/003-identity.sql
             stripComments: false
             splitStatements: false
       rollback:
         - sqlFile:
-            path: 05_rollbacks/01_ddl/03_tables/003-business.sql
+            path: 05_rollbacks/01_ddl/03_tables/003-identity.sql
             stripComments: false
             splitStatements: false          
