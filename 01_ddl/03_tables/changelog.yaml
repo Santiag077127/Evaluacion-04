@@ -154,3 +154,17 @@ databaseChangeLog:
             path: 05_rollbacks/01_ddl/03_tables/011-payment.sql
             stripComments: false
             splitStatements: false
+  - changeSet:
+      id: 012-create-billing-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/012-billing.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/012-billing.sql
+            stripComments: false
+            splitStatements: false
