@@ -76,12 +76,12 @@ databaseChangeLog:
       labels: HU-03-dev
       changes:
         - sqlFile:
-            path: 01_ddl/03_tables/006-operations.sql
+            path: 01_ddl/03_tables/006-airport.sql
             stripComments: false
             splitStatements: false
       rollback:
         - sqlFile:
-            path: 05_rollbacks/01_ddl/03_tables/006-operations.sql
+            path: 05_rollbacks/01_ddl/03_tables/006-airport.sql
             stripComments: false
             splitStatements: false          
   - changeSet:
