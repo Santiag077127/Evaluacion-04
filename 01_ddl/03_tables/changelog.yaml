@@ -19,11 +19,11 @@ databaseChangeLog:
       labels: HU-03-dev
       changes:
         - sqlFile:
-            path: 01_ddl/03_tables/002-security.sql
+            path: 01_ddl/03_tables/002-airline.sql
             stripComments: false
             splitStatements: false
       rollback:
         - sqlFile:
-            path: 05_rollbacks/01_ddl/03_tables/002-security.sql
+            path: 05_rollbacks/01_ddl/03_tables/002-airline.sql
             stripComments: false
             splitStatements: false
