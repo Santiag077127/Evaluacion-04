@@ -1,6 +1,8 @@
 -- ============================================
--- DOMAIN: GEOGRAPHY
+-- DOMAIN: GEOGRAPHY AND REFERENCE DATA
 -- ============================================
+
+CREATE EXTENSION IF NOT EXISTS pgcrypto;
 
 -- TIME ZONE
 CREATE TABLE time_zone (
