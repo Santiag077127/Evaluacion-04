@@ -1,0 +1,3 @@
+DELETE FROM person_type CASCADE;
+DELETE FROM document_type CASCADE;
+DELETE FROM contact_type CASCADE;
