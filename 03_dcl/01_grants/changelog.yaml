@@ -1,1 +1,15 @@
-databaseChangeLog: []
+databaseChangeLog: 
+  - changeSet:
+      id: 001-grants
+      author: Santiagogordoperez
+      labels: HU-19-roles
+      changes:
+        - sqlFile:
+            path: 03_dcl/01_grants/001-grants.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/03_dcl/01_grants/001-grants.sql
+            stripComments: false
+            splitStatements: false
