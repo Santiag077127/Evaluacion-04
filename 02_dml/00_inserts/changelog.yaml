@@ -84,17 +84,31 @@ databaseChangeLog:
             stripComments: false
             splitStatements: false
   - changeSet:
-      id: 007-insert-flight
+      id: 007-insert-aircraft
       author: Santiagogordoperez
       labels: HU-18-inserts
       changes:
         - sqlFile:
-            path: 02_dml/00_inserts/007-flight.sql
+            path: 02_dml/00_inserts/007-aircraft.sql
             stripComments: false
             splitStatements: false
       rollback:
         - sqlFile:
-            path: 05_rollbacks/02_dml/00_inserts/007-flight.sql
+            path: 05_rollbacks/02_dml/00_inserts/007-aircraft.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 008-insert-flight
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/008-flight.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/008-flight.sql
             stripComments: false
             splitStatements: false
   - changeSet:
