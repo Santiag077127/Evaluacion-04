@@ -1,0 +1,3 @@
+DELETE FROM continent CASCADE;
+DELETE FROM time_zone CASCADE;
+DELETE FROM currency CASCADE;
