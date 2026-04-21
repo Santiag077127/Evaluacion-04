@@ -1,0 +1,2 @@
+DELETE FROM sale CASCADE;
+DELETE FROM reservation CASCADE;

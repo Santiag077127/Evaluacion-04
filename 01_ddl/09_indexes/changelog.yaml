@@ -1,1 +1,15 @@
-databaseChangeLog: []
+databaseChangeLog: 
+  - changeSet:
+      id: 001-create-indexes
+      author: Santiagogordoperez
+      labels: HU-17-indexes
+      changes:
+        - sqlFile:
+            path: 01_ddl/09_indexes/001-indexes.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/09_indexes/001-indexes.sql
+            stripComments: false
+            splitStatements: false
