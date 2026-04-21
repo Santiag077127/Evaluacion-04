@@ -1,1 +1,184 @@
-databaseChangeLog: []
+databaseChangeLog:
+  - changeSet:
+      id: 001-create-geography-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/001-geography.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/001-geography.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 002-create-airline-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/002-airline.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/002-airline.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 003-create-identity-domain
+      author: Santiagogordoperez
+      labels: HU-05-3Dominio
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/003-identity.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/003-identity.sql
+            stripComments: false
+            splitStatements: false          
+
+  - changeSet:
+      id: 004-create-security-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/004-security.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/004-security.sql
+            stripComments: false
+            splitStatements: false          
+  - changeSet:
+      id: 005-create-payments-domain
+      author: Santiagogordoperez
+      labels: HU-07-5Dominio
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/005-customer.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/005-customer.sql
+            stripComments: false
+            splitStatements: false          
+  - changeSet:
+      id: 006-create-operations-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/006-airport.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/006-airport.sql
+            stripComments: false
+            splitStatements: false          
+  - changeSet:
+      id: 007-create-reporting-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/007-aircraft.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/007-aircraft.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 008-create-flight-operations-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/008-flight_operations.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/008-flight_operations.sql
+            stripComments: false
+            splitStatements: false  
+  - changeSet:
+      id: 009-create-sales-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/009-sales.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/009-sales.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 010-create-boarding-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/010-boarding.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/010-boarding.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 011-create-payment-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/011-payment.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/011-payment.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 012-create-billing-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/012-billing.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/012-billing.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 013-create-crew-management-domain
+      author: Santiagogordoperez
+      labels: HU-03-dev
+      changes:
+        - sqlFile:
+            path: 01_ddl/03_tables/013-crew_management.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/01_ddl/03_tables/013-crew_management.sql
+            stripComments: false
+            splitStatements: false

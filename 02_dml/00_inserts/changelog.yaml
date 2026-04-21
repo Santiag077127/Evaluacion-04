@@ -1,1 +1,141 @@
-databaseChangeLog: []
+databaseChangeLog: 
+  - changeSet:
+      id: 001-insert-geography
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/001-geography.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/001-geography.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 002-insert-airline
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/002-airline.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/002-airline.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 003-insert-identity
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/003-identity.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/003-identity.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 004-insert-security
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/004-security.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/004-security.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 005-insert-customer
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/005-customer.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/005-customer.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 006-insert-airport
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/006-airport.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/006-airport.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 007-insert-aircraft
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/007-aircraft.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/007-aircraft.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 008-insert-flight
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/008-flight.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/008-flight.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 009-insert-sales
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/009-sales.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/009-sales.sql
+            stripComments: false
+            splitStatements: false
+  - changeSet:
+      id: 010-insert-payment
+      author: Santiagogordoperez
+      labels: HU-18-inserts
+      changes:
+        - sqlFile:
+            path: 02_dml/00_inserts/010-payment.sql
+            stripComments: false
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: 05_rollbacks/02_dml/00_inserts/010-payment.sql
+            stripComments: false
+            splitStatements: false
