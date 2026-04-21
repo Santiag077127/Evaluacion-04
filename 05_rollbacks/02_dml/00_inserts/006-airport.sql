@@ -1,0 +1,1 @@
+DELETE FROM airport CASCADE;
